@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* overflow: hidden; */
+        }
+
+        .container-row {
+            display: flex;
+            /* background-color: lightblue; */
+            height: 18vh;
+            justify-content: space-around;
+            align-items: center;
+            border: 3px solid black;
+            border-radius: 30px;
+
+
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            /* background-color: lightgray; */
+            text-align: center;
+            border-radius: 20px;
+
+        }
+
+        .row2 {
+            /* background-color: antiquewhite; */
+            /* justify-content: space-around; */
+            margin: 10px;
+            justify-content: space-around;
+            height: 60vh;
+
+        }
+
+
+        /* .row3 {
+            justify-content: space-around;
+            background-color: lightseagreen;
+        } */
+
+       
+        .item1,
+        .item2,
+        .item3 {
+            background-color: red;
+            flex-basis: 300px;
+        }
+        .item7,
+        .item8,
+        .item9 {
+            background-color: grey;
+            flex-basis: 300px;
+        }
+
+
+        .item41 {
+            flex-basis: 300px;
+            background-color: lightpink;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .item42 {
+            flex-basis: 1000px;
+            background-color: lightgreen;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            /* align-content: space-around; */
+            flex-wrap: wrap;
+        }
+
+        .inner-column-411 {
+            background-color: lightyellow;
+            flex-basis: 100px;
+            width: 200px;
+        }
+
+        .inner-column-412 {
+            background-color: lightblue;
+            flex-basis: 100px;
+            width: 200px;
+        }
+
+        .inner-column-413 {
+            background-color: lightslategray;
+            flex-basis: 100px;
+            width: 200px;
+        }
+
+        .inner-row-421 {
+            background-color: aliceblue;
+            flex-basis: 200px;
+            height: 200px;
+            align-self: center;
+        }
+
+        .inner-row-422 {
+            background-color: lightblue;
+            flex-basis: 200px;
+            height: 200px;
+        }
+
+        .inner-row-423 {
+            background-color: lightcoral;
+            flex-basis: 200px;
+            height: 200px;
+            /* align-self:flex-end; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-row">
+        <div class="item item1">
+            1
+
+        </div>
+        <div class="item item2">
+            2
+
+        </div>
+        <div class="item item3">
+            3
+
+        </div>
+    </div>
+
+    </div>
+    <div class="container-row row2">
+        <div class="item item41">
+            <!-- width 20% -->
+            <!-- 41 -->
+            <div class="item inner-column-411">
+                411
+            </div>
+            <div class="item inner-column-412">
+                412
+            </div>
+            <div class="item inner-column-413">
+                413
+            </div>
+
+        </div>
+        <div class="item item42">
+            <!-- width 80% -->
+
+            <div class="item inner-row-421">
+                421
+            </div>
+            <div class="item inner-row-422">
+                422
+            </div>
+            <div class="item inner-row-423">
+                423
+            </div>
+
+
+        </div>
+        <div class="item item41">
+            <!-- width 20% -->
+            <!-- 41 -->
+            <div class="item inner-column-411">
+                411
+            </div>
+            <div class="item inner-column-412">
+                412
+            </div>
+            <div class="item inner-column-413">
+                413
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container-row">
+        <div class="item item7">
+            7
+
+        </div>
+        <div class="item item8">
+            8
+
+        </div>
+        <div class="item item9">
+            9
+
+        </div>
+    </div>
+
+</body>
+
+</html>

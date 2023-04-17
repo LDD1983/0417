@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 1024px;
+            height: 768px;
+            border: 1px solid #ccc;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        /* top */
+        .top {
+            flex-basis: 1000px;
+            height: 65px;
+            border: 1px solid #ccc;
+        }
+
+        /* aside */
+        .aside {
+            flex-basis: 215px;
+            border: 1px solid #ccc;
+            height: calc(768px - 65px - 20px - 4px);
+
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .aside > .menu {
+            flex-basis: calc(100% - 25px);
+            border: 1px solid #ccc;
+        }
+
+        .aside > .update {
+            flex-basis: 25px;
+            border: 1px solid #ccc;
+        }
+
+        /* section */
+        .section {
+            flex-basis: calc(1000px - 215px);
+            border: 1px solid #ccc;
+            height: calc(768px - 65px - 20px - 4px);
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section > .marquee {
+            flex-basis: 29px;
+            border: 1px solid #ccc;
+        }
+
+        .section > .main {
+            flex-basis: calc(100% - 29px);
+            border: 1px solid #ccc;
+        }
+
+        /* footer */
+        .footer {
+            flex-basis: 1000px;
+            height: 20px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            top
+        </div>
+
+        <div class="aside">
+            <!-- aside -->
+            <div class="menu">
+                menu
+            </div>
+            <div class="update">
+                update
+            </div>
+        </div>
+
+        <div class="section">
+            <!-- section -->
+            <div class="marquee">
+                marquee
+            </div>
+            <div class="content">
+                content
+            </div>
+        </div>
+
+        <footer class="footer">
+            footer
+        </footer>
+
+    </div>
+</body>
+
+</html>
